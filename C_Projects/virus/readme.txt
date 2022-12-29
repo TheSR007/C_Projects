@@ -1,0 +1,1 @@
+simple program to scare your friends
