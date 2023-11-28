@@ -1,0 +1,1 @@
+simple formula and simple answer N*(N-1)/2

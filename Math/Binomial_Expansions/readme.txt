@@ -1,0 +1,1 @@
+it can show you the formulas such as (a+b)^7 and so on negative is also possible

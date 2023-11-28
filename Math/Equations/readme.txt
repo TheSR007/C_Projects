@@ -1,0 +1,1 @@
+It can find roots of polinomial equations upto 4 degree/Quartic as there isn't a general formula for 5 degree/Quintic
