@@ -1,29 +1,34 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
         {
+            "name": "Debug C using GDB",
             "type": "cppdbg",
             "request": "launch",
-            "name": "Debug using GDB",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [],
             "cwd": "${fileDirname}",
-            "miDebuggerPath": "C:\\Program Files\\Msys64\\clang64\\bin\\gdb.exe",
-            "preLaunchTask": "C/C++: gcc.exe build active file",
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",
+            "preLaunchTask": "C: gcc build active file",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "externalConsole": false
         },
         {
-            "name": "Debug using LLDB",
+            "name": "Debug C using LLDB",
             "type": "lldb",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "preLaunchTask": "C/C++: clang.exe build active file"
+            "args": [],
+            "cwd": "${fileDirname}",
+            "preLaunchTask": "C: clang build active file",
+            
         }
-
-        
-       
     ]
 }
